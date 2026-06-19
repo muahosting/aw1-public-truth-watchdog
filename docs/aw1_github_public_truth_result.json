@@ -1,0 +1,13 @@
+{
+  "vantage_id": "external_github_actions",
+  "verdict": "FAIL",
+  "pass": false,
+  "fail_reason": [
+    "placeholder_not_a_real_github_hosted_runner_result"
+  ],
+  "generated_at": "1970-01-01T00:00:00Z",
+  "fetched_at": "1970-01-01T00:00:00Z",
+  "github_actions": false,
+  "results": [],
+  "no_fake_pass": true
+}

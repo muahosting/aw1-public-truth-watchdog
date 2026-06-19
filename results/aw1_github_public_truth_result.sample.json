@@ -1,0 +1,67 @@
+{
+  "vantage_id": "external_github_actions",
+  "network": "GitHub Actions hosted runner",
+  "runner_os": "Linux",
+  "run_id": "1234567890",
+  "run_attempt": "1",
+  "repository": "owner/aw1-public-truth-watchdog",
+  "fetched_at": "2026-06-19T00:00:00Z",
+  "generated_at": "2026-06-19T00:00:00Z",
+  "verdict": "PASS",
+  "pass": true,
+  "fail_reason": [],
+  "results": [
+    {
+      "name": "aw1_latest",
+      "url": "https://aw1.awai.vn/log/latest.json",
+      "status_code": 200,
+      "generated_at": "2026-06-19T00:00:00Z",
+      "effective_verdict": "PASS",
+      "latest_effective_verdict": "PASS",
+      "stale_latest": false,
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "etag": null,
+      "last_modified": "Fri, 19 Jun 2026 00:00:00 GMT",
+      "body_hash": "sha256-placeholder",
+      "elapsed_ms": 250
+    },
+    {
+      "name": "aw1_index",
+      "url": "https://aw1.awai.vn/log/",
+      "status_code": 200,
+      "generated_at": "2026-06-19T00:00:00Z",
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "etag": null,
+      "last_modified": "Fri, 19 Jun 2026 00:00:00 GMT",
+      "body_hash": "sha256-placeholder",
+      "elapsed_ms": 250
+    },
+    {
+      "name": "aw1_queue",
+      "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json",
+      "status_code": 200,
+      "generated_at": "2026-06-19T00:00:00Z",
+      "queue_item_count": 0,
+      "model_improvement_candidate_count": 0,
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "etag": null,
+      "last_modified": "Fri, 19 Jun 2026 00:00:00 GMT",
+      "body_hash": "sha256-placeholder",
+      "elapsed_ms": 250
+    },
+    {
+      "name": "chat_latest",
+      "url": "https://chat.awai.vn/log/latest.json",
+      "status_code": 200,
+      "generated_at": "2026-06-19T00:00:00Z",
+      "verdict": "PASS",
+      "render_result": "PASS",
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "etag": null,
+      "last_modified": "Fri, 19 Jun 2026 00:00:00 GMT",
+      "body_hash": "sha256-placeholder",
+      "elapsed_ms": 250
+    }
+  ],
+  "no_fake_pass": true
+}
