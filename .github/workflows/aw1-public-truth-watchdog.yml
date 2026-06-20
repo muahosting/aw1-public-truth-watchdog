@@ -1,12 +1,16 @@
 name: AW1 Public Truth Watchdog
 
-permissions:
-  contents: write
-
 on:
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aw1-public-truth-watchdog-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   public-truth:
@@ -17,7 +21,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: true
-
+          fetch-depth: 0
       - name: Run public truth check
         id: check
         continue-on-error: true
@@ -28,14 +32,42 @@ jobs:
           cat docs/aw1_github_public_truth_result.json
 
       - name: Commit result JSON
-        if: always()
+        shell: bash
         run: |
+          set -euo pipefail
+          DOC_RESULT="docs/aw1_github_public_truth_result.json"
+          RESULTS_RESULT="results/aw1_github_public_truth_result.json"
+          if [ ! -s "$DOC_RESULT" ]; then
+            echo "FAIL: public truth result JSON missing or empty: $DOC_RESULT"
+            exit 10
+          fi
+          tmpdir="$(mktemp -d)"
+          trap 'rm -rf "$tmpdir"' EXIT
+          cp "$DOC_RESULT" "$tmpdir/aw1_github_public_truth_result.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/aw1_github_public_truth_result.json results/aw1_github_public_truth_result.json
-          git commit -m "update AW1 public truth result [skip ci]" || true
-          git push || true
-
+          for attempt in 1 2 3 4 5; do
+            echo "Publish attempt $attempt/5"
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p docs results
+            cp "$tmpdir/aw1_github_public_truth_result.json" "$DOC_RESULT"
+            cp "$tmpdir/aw1_github_public_truth_result.json" "$RESULTS_RESULT"
+            git add "$DOC_RESULT" "$RESULTS_RESULT"
+            if git diff --cached --quiet; then
+              echo "No public truth result changes to publish."
+              exit 0
+            fi
+            git commit -m "update AW1 public truth result [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Published public truth result."
+              exit 0
+            fi
+            echo "Push failed on attempt $attempt; retrying after backoff."
+            sleep $((attempt * 5))
+          done
+          echo "FAIL: public truth result passed but could not publish after retries."
+          exit 12
       - name: Fail job if watchdog failed
         if: always()
         run: |
