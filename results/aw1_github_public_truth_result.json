@@ -4,8 +4,8 @@
     "aw1_index:transport_error",
     "aw1_queue:transport_error"
   ],
-  "fetched_at": "2026-07-20T02:56:47Z",
-  "generated_at": "2026-07-20T02:56:47Z",
+  "fetched_at": "2026-07-20T03:39:29Z",
+  "generated_at": "2026-07-20T03:39:29Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -14,21 +14,21 @@
   "results": [
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20516,
+      "elapsed_ms": 21747,
       "error": "URLError",
       "name": "aw1_latest",
       "url": "https://aw1.awai.vn/log/latest.json"
     },
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20286,
+      "elapsed_ms": 21999,
       "error": "URLError",
       "name": "aw1_index",
       "url": "https://aw1.awai.vn/log/"
     },
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20169,
+      "elapsed_ms": 20074,
       "error": "URLError",
       "name": "aw1_queue",
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
@@ -38,10 +38,10 @@
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 921,
-      "etag": "\"2fe2-657005cbc1cb9\"",
+      "elapsed_ms": 1031,
+      "etag": "\"2fe2-65702a1141059\"",
       "generated_at": "2026-07-03T12:05:25Z",
-      "last_modified": "Mon, 20 Jul 2026 00:55:27 GMT",
+      "last_modified": "Mon, 20 Jul 2026 03:37:44 GMT",
       "name": "chat_latest",
       "render_result": "PASS",
       "status_code": 200,
@@ -50,7 +50,7 @@
     }
   ],
   "run_attempt": "1",
-  "run_id": "29708030650",
+  "run_id": "29715127291",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
