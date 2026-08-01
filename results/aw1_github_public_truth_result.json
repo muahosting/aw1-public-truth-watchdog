@@ -1,13 +1,10 @@
 {
   "fail_reason": [
-    "aw1_latest:transport_error",
-    "aw1_index:transport_error",
-    "aw1_queue:transport_error",
     "chat_latest:verdict_not_pass",
     "chat_latest:render_result_not_pass"
   ],
-  "fetched_at": "2026-08-01T11:43:38Z",
-  "generated_at": "2026-08-01T11:43:38Z",
+  "fetched_at": "2026-08-01T13:39:26Z",
+  "generated_at": "2026-08-01T13:39:26Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -15,42 +12,70 @@
   "repository": "muahosting/aw1-public-truth-watchdog",
   "results": [
     {
-      "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20259,
-      "error": "URLError",
-      "name": "aw1_latest",
-      "url": "https://aw1.awai.vn/log/latest.json"
-    },
-    {
-      "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20240,
-      "error": "URLError",
-      "name": "aw1_index",
-      "url": "https://aw1.awai.vn/log/"
-    },
-    {
-      "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20239,
-      "error": "URLError",
-      "name": "aw1_queue",
-      "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
-    },
-    {
-      "body_hash": "48968ef23cdd366d0aaa094f7e1d634b02c76c59420848e2b950984266f81e39",
+      "body_hash": "1f9acd9206dcc435b5b7d051b04cd57adbc0be725fcc85388858cc212b246101",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 877,
-      "etag": "\"2b1a-657fa36455317\"",
+      "effective_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
+      "elapsed_ms": 2314,
+      "etag": "\"96f2c-657fc69feb2c4\"",
+      "generated_at": "2026-08-01T13:38:01Z",
+      "last_modified": "Sat, 01 Aug 2026 13:38:01 GMT",
+      "latest_effective_verdict": "PASS",
+      "latest_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
+      "model_improvement_candidate_count": 0,
+      "name": "aw1_latest",
+      "newest_receipt_name": "aw1_capability_factory_phase3_runtime_source_memory_latest.json",
+      "queue_item_count": 0,
+      "stale_latest": false,
+      "status_code": 200,
+      "url": "https://aw1.awai.vn/log/latest.json",
+      "verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN"
+    },
+    {
+      "body_hash": "6ce285dbc8d841f38b0e283b66c6d5739f89d9cf140b9aa95238124355b38550",
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
+      "contains_stale_latest_true": false,
+      "elapsed_ms": 700,
+      "etag": "\"2bbc-657fc69ff27f5\"",
+      "generated_at": "2026-07-10T09:50:02Z",
+      "last_modified": "Sat, 01 Aug 2026 13:38:01 GMT",
+      "name": "aw1_index",
+      "status_code": 200,
+      "url": "https://aw1.awai.vn/log/"
+    },
+    {
+      "body_hash": "a79c938ce36b6879d6b85de50a64e06d4d817abbd0b81ba001bb44f089357c9a",
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
+      "contains_stale_latest_true": false,
+      "elapsed_ms": 895,
+      "etag": "\"cc5-6563eaca485ce\"",
+      "generated_at": "2026-07-10T09:50:44Z",
+      "last_modified": "Fri, 10 Jul 2026 09:50:44 GMT",
+      "model_improvement_candidate_count": 0,
+      "name": "aw1_queue",
+      "queue_item_count": 0,
+      "status_code": 200,
+      "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
+    },
+    {
+      "body_hash": "f6f7d0ad7e08286e6a39c38c4090faea7cae94426110558e4d2939ee7b389c3c",
+      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
+      "contains_stale_latest_true": false,
+      "elapsed_ms": 943,
+      "etag": "\"c77-657fc3a9f00eb\"",
       "generated_at": null,
-      "last_modified": "Sat, 01 Aug 2026 11:00:24 GMT",
+      "last_modified": "Sat, 01 Aug 2026 13:24:47 GMT",
       "name": "chat_latest",
       "status_code": 200,
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "30698257293",
+  "run_id": "30702167504",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
