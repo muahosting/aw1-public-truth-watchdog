@@ -1,10 +1,9 @@
 {
   "fail_reason": [
-    "chat_latest:verdict_not_pass",
-    "chat_latest:render_result_not_pass"
+    "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-08-16T13:34:56Z",
-  "generated_at": "2026-08-16T13:34:56Z",
+  "fetched_at": "2026-08-16T14:28:06Z",
+  "generated_at": "2026-08-16T14:28:06Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -12,15 +11,15 @@
   "repository": "muahosting/aw1-public-truth-watchdog",
   "results": [
     {
-      "body_hash": "af0d4779aa6368eb82749269ea428a2a00a10ef0e0e52915782a7e94f2a95a2f",
+      "body_hash": "fdda3a1d56e1fb71879ce8fc7df397482345eb1b430bd874978386e20dcf71f1",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
       "effective_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
-      "elapsed_ms": 2373,
-      "etag": "\"96f2c-6592a1b4fc68b\"",
-      "generated_at": "2026-08-16T13:34:01Z",
-      "last_modified": "Sun, 16 Aug 2026 13:34:01 GMT",
+      "elapsed_ms": 2171,
+      "etag": "\"96f2c-6592adc7543f6\"",
+      "generated_at": "2026-08-16T14:28:02Z",
+      "last_modified": "Sun, 16 Aug 2026 14:28:02 GMT",
       "latest_effective_verdict": "PASS",
       "latest_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
       "model_improvement_candidate_count": 0,
@@ -33,14 +32,14 @@
       "verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN"
     },
     {
-      "body_hash": "5998ee5b61a1c079e9934e91d8c833d72376635fa966fe31a3dc8e9c13b1c1a0",
+      "body_hash": "958a74763a2b6f22108fc29a692828304c99cab4d1a23e0759d831f271b4f80b",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 936,
-      "etag": "\"2bbc-6592a1b503004\"",
+      "elapsed_ms": 663,
+      "etag": "\"2bbc-6592adc75a986\"",
       "generated_at": "2026-07-10T09:50:02Z",
-      "last_modified": "Sun, 16 Aug 2026 13:34:02 GMT",
+      "last_modified": "Sun, 16 Aug 2026 14:28:02 GMT",
       "name": "aw1_index",
       "status_code": 200,
       "url": "https://aw1.awai.vn/log/"
@@ -50,7 +49,7 @@
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 938,
+      "elapsed_ms": 656,
       "etag": "\"cc5-6563eaca485ce\"",
       "generated_at": "2026-07-10T09:50:44Z",
       "last_modified": "Fri, 10 Jul 2026 09:50:44 GMT",
@@ -61,21 +60,15 @@
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
     },
     {
-      "body_hash": "8eca22435d6cf7946781ede08fd67bba71bd7cf7060e9651ce68edd60056721e",
-      "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
-      "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
-      "contains_stale_latest_true": false,
-      "elapsed_ms": 971,
-      "etag": "\"1e72-65929b83f866a\"",
-      "generated_at": null,
-      "last_modified": "Sun, 16 Aug 2026 13:06:19 GMT",
+      "detail": "<urlopen error timed out>",
+      "elapsed_ms": 20243,
+      "error": "URLError",
       "name": "chat_latest",
-      "status_code": 200,
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "31950220701",
+  "run_id": "31952781326",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
