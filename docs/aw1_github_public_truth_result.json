@@ -5,8 +5,8 @@
     "aw1_queue:transport_error",
     "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-08-20T19:35:28Z",
-  "generated_at": "2026-08-20T19:35:28Z",
+  "fetched_at": "2026-08-20T20:34:09Z",
+  "generated_at": "2026-08-20T20:34:09Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -15,35 +15,35 @@
   "results": [
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20277,
+      "elapsed_ms": 20058,
       "error": "URLError",
       "name": "aw1_latest",
       "url": "https://aw1.awai.vn/log/latest.json"
     },
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20193,
+      "elapsed_ms": 20019,
       "error": "URLError",
       "name": "aw1_index",
       "url": "https://aw1.awai.vn/log/"
     },
     {
       "detail": "<urlopen error timed out>",
-      "elapsed_ms": 20202,
+      "elapsed_ms": 20035,
       "error": "URLError",
       "name": "aw1_queue",
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
     },
     {
       "detail": "HTTP Error 404: Not Found",
-      "elapsed_ms": 768,
+      "elapsed_ms": 797,
       "error": "HTTPError",
       "name": "chat_latest",
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "32409482807",
+  "run_id": "32414779825",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
