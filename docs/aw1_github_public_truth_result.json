@@ -2,8 +2,8 @@
   "fail_reason": [
     "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-08-23T08:35:48Z",
-  "generated_at": "2026-08-23T08:35:48Z",
+  "fetched_at": "2026-08-23T09:32:23Z",
+  "generated_at": "2026-08-23T09:32:23Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -11,15 +11,15 @@
   "repository": "muahosting/aw1-public-truth-watchdog",
   "results": [
     {
-      "body_hash": "ff74885095f40ecb47ae8180599f17b9df3855755211fd2efb4fb9b7a9f09a75",
+      "body_hash": "52c603f22d916c2ffa8d8bd228e44527560d37d481653a98f128ea7dcee0720e",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
       "effective_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
-      "elapsed_ms": 2300,
-      "etag": "\"96f2c-659b2bf3e423e\"",
-      "generated_at": "2026-08-23T08:35:07Z",
-      "last_modified": "Sun, 23 Aug 2026 08:35:07 GMT",
+      "elapsed_ms": 1873,
+      "etag": "\"96f2c-659b38ac163c1\"",
+      "generated_at": "2026-08-23T09:32:02Z",
+      "last_modified": "Sun, 23 Aug 2026 09:32:02 GMT",
       "latest_effective_verdict": "PASS",
       "latest_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
       "model_improvement_candidate_count": 0,
@@ -32,14 +32,14 @@
       "verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN"
     },
     {
-      "body_hash": "8dc80d58a409bb8e7e91d092a1f8ec9bb9afb0c4223874c8a1a5fc5b59b8df08",
+      "body_hash": "e57f8a11aec52abd55f00e61a89f066c1f40bf237f0117f15e9a2d42ef7ae9f3",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 696,
-      "etag": "\"2bbc-659b2bf3eabb6\"",
+      "elapsed_ms": 755,
+      "etag": "\"2bbc-659b38ac1c952\"",
       "generated_at": "2026-07-10T09:50:02Z",
-      "last_modified": "Sun, 23 Aug 2026 08:35:07 GMT",
+      "last_modified": "Sun, 23 Aug 2026 09:32:02 GMT",
       "name": "aw1_index",
       "status_code": 200,
       "url": "https://aw1.awai.vn/log/"
@@ -49,7 +49,7 @@
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 928,
+      "elapsed_ms": 554,
       "etag": "\"cc5-6563eaca485ce\"",
       "generated_at": "2026-07-10T09:50:44Z",
       "last_modified": "Fri, 10 Jul 2026 09:50:44 GMT",
@@ -61,14 +61,14 @@
     },
     {
       "detail": "HTTP Error 404: Not Found",
-      "elapsed_ms": 990,
+      "elapsed_ms": 836,
       "error": "HTTPError",
       "name": "chat_latest",
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "32628679186",
+  "run_id": "32631274100",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
