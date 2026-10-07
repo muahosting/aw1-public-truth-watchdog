@@ -3,8 +3,8 @@
     "aw1_queue:transport_error",
     "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-10-07T07:38:12Z",
-  "generated_at": "2026-10-07T07:38:12Z",
+  "fetched_at": "2026-10-07T15:23:20Z",
+  "generated_at": "2026-10-07T15:23:20Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -12,15 +12,15 @@
   "repository": "muahosting/aw1-public-truth-watchdog",
   "results": [
     {
-      "body_hash": "e45dcde3870c4ac553c1cf43d7ff2afac496458f27d41de2924508ff66dc4856",
+      "body_hash": "f1ca8543454f4de7743aaeeb4f27768aaf9d5aaa3f43c3c00fc96c4d92f1373d",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
       "effective_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
-      "elapsed_ms": 2124,
+      "elapsed_ms": 2191,
       "etag": null,
-      "generated_at": "2026-10-07T07:30:03Z",
-      "last_modified": "Wed, 07 Oct 2026 07:30:03 GMT",
+      "generated_at": "2026-10-07T15:20:03Z",
+      "last_modified": "Wed, 07 Oct 2026 15:20:03 GMT",
       "latest_effective_verdict": "PASS",
       "latest_verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN",
       "model_improvement_candidate_count": 0,
@@ -33,35 +33,35 @@
       "verdict": "PASS_AW1_PRODUCTION_INDEPENDENCE_PROVEN"
     },
     {
-      "body_hash": "dc58b59b35a25712b1f2a1f5e00c32f3f4902338e229e642d362d9cc6ba935b7",
+      "body_hash": "437a632f37993d6536089193c866fa466b88dba81f0abfde5c056889ab9d69ab",
       "cache_control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
       "contains_PASS_WITH_NEWER_RUNTIME_LOG": false,
       "contains_stale_latest_true": false,
-      "elapsed_ms": 761,
+      "elapsed_ms": 691,
       "etag": null,
       "generated_at": "2026-07-10T09:50:02Z",
-      "last_modified": "Wed, 07 Oct 2026 07:30:04 GMT",
+      "last_modified": "Wed, 07 Oct 2026 15:20:03 GMT",
       "name": "aw1_index",
       "status_code": 200,
       "url": "https://aw1.awai.vn/log/"
     },
     {
       "detail": "HTTP Error 404: File not found",
-      "elapsed_ms": 789,
+      "elapsed_ms": 756,
       "error": "HTTPError",
       "name": "aw1_queue",
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
     },
     {
       "detail": "HTTP Error 404: Not Found",
-      "elapsed_ms": 798,
+      "elapsed_ms": 958,
       "error": "HTTPError",
       "name": "chat_latest",
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "37588517662",
+  "run_id": "37643481131",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
