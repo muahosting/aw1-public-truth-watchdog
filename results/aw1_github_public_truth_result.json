@@ -5,8 +5,8 @@
     "aw1_queue:transport_error",
     "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-10-23T18:37:57Z",
-  "generated_at": "2026-10-23T18:37:57Z",
+  "fetched_at": "2026-10-23T21:56:22Z",
+  "generated_at": "2026-10-23T21:56:22Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -15,35 +15,35 @@
   "results": [
     {
       "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
-      "elapsed_ms": 785,
+      "elapsed_ms": 532,
       "error": "URLError",
       "name": "aw1_latest",
       "url": "https://aw1.awai.vn/log/latest.json"
     },
     {
       "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
-      "elapsed_ms": 544,
+      "elapsed_ms": 503,
       "error": "URLError",
       "name": "aw1_index",
       "url": "https://aw1.awai.vn/log/"
     },
     {
       "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
-      "elapsed_ms": 544,
+      "elapsed_ms": 498,
       "error": "URLError",
       "name": "aw1_queue",
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
     },
     {
       "detail": "HTTP Error 404: Not Found",
-      "elapsed_ms": 849,
+      "elapsed_ms": 722,
       "error": "HTTPError",
       "name": "chat_latest",
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "40004841419",
+  "run_id": "40030277205",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
