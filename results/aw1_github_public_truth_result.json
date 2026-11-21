@@ -5,8 +5,8 @@
     "aw1_queue:transport_error",
     "chat_latest:transport_error"
   ],
-  "fetched_at": "2026-11-21T06:33:26Z",
-  "generated_at": "2026-11-21T06:33:26Z",
+  "fetched_at": "2026-11-21T15:11:48Z",
+  "generated_at": "2026-11-21T15:11:48Z",
   "github_actions": true,
   "network": "GitHub Actions hosted runner",
   "no_fake_pass": true,
@@ -15,35 +15,35 @@
   "results": [
     {
       "detail": "HTTP Error 503: Service Unavailable",
-      "elapsed_ms": 854,
+      "elapsed_ms": 722,
       "error": "HTTPError",
       "name": "aw1_latest",
       "url": "https://aw1.awai.vn/log/latest.json"
     },
     {
       "detail": "HTTP Error 503: Service Unavailable",
-      "elapsed_ms": 831,
+      "elapsed_ms": 721,
       "error": "HTTPError",
       "name": "aw1_index",
       "url": "https://aw1.awai.vn/log/"
     },
     {
       "detail": "HTTP Error 503: Service Unavailable",
-      "elapsed_ms": 654,
+      "elapsed_ms": 533,
       "error": "HTTPError",
       "name": "aw1_queue",
       "url": "https://aw1.awai.vn/log/model_improvement_queue_public.json"
     },
     {
       "detail": "HTTP Error 404: Not Found",
-      "elapsed_ms": 861,
+      "elapsed_ms": 824,
       "error": "HTTPError",
       "name": "chat_latest",
       "url": "https://chat.awai.vn/log/latest.json"
     }
   ],
   "run_attempt": "1",
-  "run_id": "44876096945",
+  "run_id": "44917875517",
   "runner_os": "Linux",
   "vantage_id": "external_github_actions",
   "verdict": "FAIL"
